@@ -1,7 +1,7 @@
 const { globSync } = require("glob");
 const { spawn } = require("child_process");
 
-const files = globSync("../src/website/data/playground-samples/*/*/*.js");
+const files = globSync("src/website/data/playground-samples/*/*/*.js");
 
 console.log("[*] Files found:", files.length);
 
