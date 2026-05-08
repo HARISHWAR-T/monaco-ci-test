@@ -1,7 +1,9 @@
-import { globSync } from "glob";
-import { spawn } from "child_process";
+const { globSync } = require("glob");
+const { spawn } = require("child_process");
 
 const files = globSync("src/website/data/playground-samples/*/*/*.js");
+
+console.log("[*] Files found:", files);
 
 for (const file of files) {
     console.log(`[CHECK] Processing: ${file}`);
